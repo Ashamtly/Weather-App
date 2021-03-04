@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App Project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/040320ec36.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <h1 id="your-city">
+                Villahermosa, Tabasco
+            </h1>
+            <h3 class="date"></h3>
+            <h2 class="temp">
+                27
+                <span class="units">
+                    <a href="#" id="farenheit-link">
+                        °F
+                    </a>
+                </span>
+            </h2>
+            <h4 id="condition">
+                Sunny
+            </h4>
+            <div class="city">
+                <form id="enter-city">
+                    <input style="width: 300px;" type="search" placeholder="Write the name of your City"
+                        autocomplete="off" autofocus="on" id="enter-city-input" />
+                    <button type="search" class="btn btn-primary" value="search-city">
+                        search
+                    </button>
+                    <button type="submit" class="btn btn-success" value="search" id="current-location">
+                        My Location
+                    </button>
+                </form>
+            </div>
+            <br />
+            <p>
+                <em>More details >>></em>
+            </p>
+
+            <div class="row">
+                <div class="col-4">
+                    Today
+                    <div class="col-4">
+                        Tomorrow
+                    </div>
+                    <div class="col-4">
+                        Sunday
+                    </div>
+                </div>
+                <div class="col-4">
+                    <i class="fas fa-sun">Sunny</i>
+                    <div class="col-4">
+                        <i class="fas fa-sun">Sunny</i>
+                    </div>
+                    <div class="col-4">
+                        <i class="fas fa-cloud-sun">Cloudy</i>
+                    </div>
+                </div>
+                <div class="col-4">
+                    32°/17°
+                    <div class="col-4">
+                        31°/17°
+                    </div>
+                    <div class="col-4">
+                        32°/18°
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="callout">
+                5 Days Forecast
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="footer">
+        Coded by Atalia López from She Codes
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>
